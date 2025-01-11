@@ -1,0 +1,30 @@
+{
+  "name": "openapi-auto-components",
+  "version": "1.0.0",
+  "description": "Autofill component schemas from OpenAPI spec",
+  "author": "strblr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strblr/openapi-auto-components.git"
+  },
+  "homepage": "https://github.com/strblr/openapi-auto-components",
+  "bugs": {
+    "url": "https://github.com/strblr/openapi-auto-components/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "bun run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
